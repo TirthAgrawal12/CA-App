@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ITR_form4">
+
+
+        <LinearLayout
+            android:id="@+id/itr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/PartA"
+                style="@style/ITRcardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#ffff"
+                app:cardBackgroundColor="#ffff"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/h1"
+                        style="@style/ITRheading"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:paddingLeft="10dp"
+                        android:text="PART A GENERAL INFORMATION" />
+
+                    <ImageView
+                        android:id="@+id/PartAplusIcon"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/add_icon" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/PartAlayout"
+                style="@style/ITRcardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#ffff"
+                android:visibility="visible"
+                app:cardBackgroundColor="#ffff"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/firstName"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="First Name" />
+
+                        <EditText
+                            android:id="@+id/firstNameET"
+                            style="@style/formET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/middleName"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Middle Name" />
+
+                        <EditText
+                            android:id="@+id/middleNameET"
+                            style="@style/formET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/lastName"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Last Name" />
+
+                        <EditText
+                            android:id="@+id/lastNameET"
+                            style="@style/formET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/pan"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pan" />
+
+                        <EditText
+                            android:id="@+id/panET"
+                            style="@style/formET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/flatNo"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:text="Flat/Door/Block No" />
+
+                        <EditText
+                            android:id="@+id/flatNoET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/buildingName"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:text="Name of Premises/ Building/ Village" />
+
+                        <EditText
+                            android:id="@+id/buildingNameET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/roadName"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:text="Road/Street/Post Office" />
+
+                        <EditText
+                            android:id="@+id/roadNameET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/areaName"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Area/locality" />
+
+                        <EditText
+                            android:id="@+id/areaNameET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/cityName"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:text="Town/City/District" />
+
+                        <EditText
+                            android:id="@+id/cityNameET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/state"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="State" />
+
+                        <EditText
+                            android:id="@+id/stateET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/country"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Country" />
+
+                        <EditText
+                            android:id="@+id/countryET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/pincode"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="PinCode" />
+
+                        <EditText
+                            android:id="@+id/pinCodeET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:maxLength="6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/DOB"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Date Of Birth" />
+
+                        <EditText
+                            android:id="@+id/dobET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="date" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/status"
+                                style="@style/formTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:text="Status" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/ststusEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Individual"
+                                    android:textSize="12sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="HUF"
+                                    android:textSize="12sp" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/aadharNo"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Aadhaar No." />
+
+                        <EditText
+                            android:id="@+id/aadhharNoET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:maxLength="12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/aadharEnrolmentId"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:text="Aadhaar Enrolment Id." />
+
+                        <EditText
+                            android:id="@+id/aadhharEnrolmentIdET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:maxLength="28" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/mobileNo1"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mobile No.1" />
+
+                        <EditText
+                            android:id="@+id/mobileNo1ET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:maxLength="10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/mobileNo2"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mobile No.2" />
+
+                        <EditText
+                            android:id="@+id/mobileNo2ET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:maxLength="10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Email1"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Email 1" />
+
+                        <EditText
+                            android:id="@+id/email1ET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textEmailAddress" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Email2"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Email 2" />
+
+                        <EditText
+                            android:id="@+id/email2ET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:inputType="textEmailAddress" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        style="@style/CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/b2"
+                                style="@style/fornH2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="FILING STATUS" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp"
+                                android:background="#aaa" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/filledUs"
+                            style="@style/formTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:text="Filed u/s (Tick)" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/filedUsEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rb1filedUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="139(1)-On or before due date"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb2filedUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="139(4)-After due date"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb3filedUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="139(5)-Revised Return"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb4filedUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="92CD-Modified return"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb5filedUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="119(2)(b)-after condonation of delay."
+                            android:textSize="12sp" />
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#aaa" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/noticeUs"
+                                style="@style/formTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Or Filed in response to notice u/s" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/noticeUsEt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rb1nUs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="139(9)"
+                                    android:textSize="12sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb2nUs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="142(1)"
+                                    android:textSize="12sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb3nUs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="148"
+                                    android:textSize="12sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb4nUs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="153A"
+                                    android:textSize="12sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb5nUs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="153C"
+                                    android:textSize="12sp" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#aaa" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/receiptNo"
+                            style="@style/formTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/receiptNo" />
+
+                        <EditText
+                            android:id="@+id/receiptNoET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Receipt No"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/fillingOriginalReturnDateET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="original Return Date"
+                            android:inputType="date" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/uniqueNoDate"
+                            style="@style/formTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dateOfadvancepricingagreement" />
+
+                        <EditText
+                            android:id="@+id/orderDateET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="date of advance pricing agreement"
+                            android:inputType="date" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.CardView
+                        style="@style/CardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/FSd"
+                                style="@style/formTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/RSforIndividuals" />
+
+                            <LinearLayout
+                                android:id="@+id/fsd_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="2dp"
+                                    android:background="#aaa" />
+
+
+                                <TextView
+                                    android:id="@+id/resident"
+                                    style="@style/formTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="A. Resident" />
+
+
+                                <RadioGroup
+                                    android:id="@+id/fsda"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <!-- fsd = FILING STATUS(d)  (a,b,c) -->
+                                    <RadioButton
+                                        android:id="@+id/rb1fsda1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="@string/fsda1"
+                                        android:textSize="12sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/rb2fsda2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="@string/fsda2"
+                                        android:textSize="12sp" />
+                                </RadioGroup>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="2dp"
+                                    android:background="#aaa" />
+
+
+                                <TextView
+                                    android:id="@+id/fsdb"
+                                    style="@style/formTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="B. Resident but not Ordinarily Resident" />
+
+
+                                <RadioGroup
+                                    android:id="@+id/fsdbEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/rb1fsdb1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="@string/fsdb1"
+                                        android:textSize="12sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/rb2fsdb2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="@string/fsdb2"
+                                        android:textSize="12sp" />
+                                </RadioGroup>
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="2dp"
+                                    android:background="#aaa" />
+
+
+                                <TextView
+                                    android:id="@+id/fsdc"
+                                    style="@style/formTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="C. Non-resident" />
+
+
+                                <RadioGroup
+                                    android:id="@+id/fsdcEt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/rb1fsdc1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="@string/fsdc1"
+                                        android:textSize="12sp" />
+                                </RadioGroup>
+
+                                <TextView
+                                    android:id="@+id/fsdci"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/fsdci" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/fsdciA"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:text="Jurisdiction(s) of residence" />
+
+                                    <EditText
+                                        android:id="@+id/fsdciAEt1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:hint="1." />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+
+                                    <EditText
+                                        android:id="@+id/fsdciAEt2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:hint="2." />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/fsdciB"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="1"
+                                        android:text="Taxpayer Identification Number(s)" />
+
+
+                                    <EditText
+                                        android:id="@+id/fsdciBEt1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:hint="1." />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+
+                                    <EditText
+                                        android:id="@+id/fsdciBEt2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:hint="2." />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/fsdcii"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:text="@string/fsdcii" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/fsdciiA"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="1"
+                                        android:text="Total period of stay in India during the previous year (in days)" />
+
+                                    <EditText
+                                        android:id="@+id/fsdciiAEt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:hint="" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:id="@+id/fsdciiB"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="1"
+                                        android:text="Total period of stay in India during the 4 preceding years (in days)" />
+
+
+                                    <EditText
+                                        android:id="@+id/fsdciiBEt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:hint="" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp"
+                                android:background="#aaa" />
+
+                            <CheckBox
+                                android:id="@+id/FSd2"
+                                style="@style/formTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="@string/RSforHuf" />
+
+                            <LinearLayout
+                                android:id="@+id/fsd2_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <RadioGroup
+                                    android:id="@+id/fsd2Et"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/rb1fsD2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Resident"
+                                        android:textSize="12sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/rb2fsD2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Resident but not Ordinarily Resident"
+                                        android:textSize="12sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/rb3fsD2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Non-resident"
+                                        android:textSize="12sp" />
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                            <!--         -->
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/fsE"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Do you want to claim the benefit under section 115H? (applicable in case of resident)"/>
+
+
+                        <RadioGroup
+                            android:id="@+id/fseEt"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/rb1fsE"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:id="@+id/rb2fsE"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                android:textSize="12sp" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                    <!-- Part A Main Linerar Layout -->
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--Main Linear Layout-->
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

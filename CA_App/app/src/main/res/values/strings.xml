@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SIApp1</string>
+    <string name="receiptNo">If revised/defective, then enter Receipt No. and Date of filing original return (DD/MM/YYYY)</string>
+    <string name="uniqueNo">If filed in response to notice u/s 139(9)/142(1)/148/153A/153C or order u/s 119(2)(b)- enter Unique Number and Date of such Notice or Order</string>
+    <string name="dateOfadvancepricingagreement">If filed, in response to a notice u/s 139(9)/142(1)/148/153A/153C/119(2)(b) enter date of such notice/order, or if filed u/s 92CD, enter date of</string>
+    <string name="RSforIndividuals">Residential Status in India (for individuals) (Tick applicable option)</string>
+    <string name="fsda1">You were in India for 182 days or more during the previous year [section 6(1)(a)]</string>
+    <string name="fsda2">You were in India for 60 days or more during the previous year, and have been in India for 365 days or more within the 4 preceding years [section (6)(1)(c)] [where Explanation 1 is not applicable]</string>
+    <string name="fsdb1">You have been a non-resident in India in 9 out of 10 preceding years [section 6(6)(a)]</string>
+    <string name="fsdb2">You have been in India for 729 days or less during the 7 preceding years [section 6(6)(a)]</string>
+    <string name="fsdc1">You were a non-resident during the previous year.</string>
+    <string name="fsdci">(i) Please specify the jurisdiction(s) of residence during the previous year -</string>
+    <string name="fsdcii">(ii) In case you are a Citizen of India or a Person of Indian Origin (POI), please specify -</string>
+    <string name="RSforHuf">Residential Status in India (for HUF) (Tick applicable option)</string>
+</resources>
